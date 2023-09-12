@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Форма</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-holder" id="form-holder">
+            <form id="mainForm">
+                <div class="form-holder-inner">
+                    <div class="form-row">
+                        <div>
+                            <label for="firstName">Ім'я:</label>
+                            <input type="text" name="firstName" />
+                        </div>
+                        <div>
+                            <label for="lastName">Призвище:</label>
+                            <input type="text" name="lastName" maxlength="10" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <span>Стать:</span>
+                        </div>
+                        <div>
+                            <input type="radio" id="male" value="male" name="sex" checked="checked" />
+                            <label for="male">Чоловіча</label>
+                            <input type="radio" id="female" value="female" name="sex" />
+                            <label for="female">Жіноча</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="city">Місто:</label>
+                            <select name="city">
+                                <option value="1">Київ</option>
+                                <option value="2">Лондон</option>
+                                <option value="3">Париж</option>
+                                <option value="4" selected="selected">Харків</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="address">Адреса:</label>
+                            <input type="text" name="address" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <span>Мови:</span>
+                            <input type="checkbox" value="UA" name="languages" id="uaCheckBox" />
+                            <label for="uaCheckBox">Українська</label>
+
+                            <input type="checkbox" value="UK" name="languages" id="ukCheckBox" />
+                            <label for="ukCheckBox">Англійська</label>
+
+                            <input type="checkbox" value="FR" name="languages" id="frCheckBox" />
+                            <label for="frCheckBox">Французька</label>
+                        </div>
+                    </div>
+                    <div class="form-row-details">
+                        <div>
+                            <label for="additional-info">Додаткова інформація:</label>
+                        </div>
+                        <div>
+                            <textarea name="additional-info" cols="5" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-submit-holder">
+                        <button type="submit">Зберегти</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form-results" id="form-results">
+            <div class="form-results-title">
+                Form results
+            </div>
+            <table>
+                <tr>
+                    <td>Ім'я:</td>
+                    <td id="td_firstName"></td>
+                </tr>
+                <tr>
+                    <td>Призвище:</td>
+                    <td id="td_lastName"></td>
+                </tr>
+                <tr>
+                    <td>Стать:</td>
+                    <td id="td_sex"></td>
+                </tr>
+                <tr>
+                    <td>Місто:</td>
+                    <td id="td_city"></td>
+                </tr>
+                <tr>
+                    <td>Адреса:</td>
+                    <td id="td_address"></td>
+                </tr>
+                <tr>
+                    <td>Мови:</td>
+                    <td id="td_languages"> - </td>
+                </tr>
+                <tr>
+                    <td>Додаткова інформація:</td>
+                    <td id="td_additional-info"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
