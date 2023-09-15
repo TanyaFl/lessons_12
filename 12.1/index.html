@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Task 5</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="categories-holder">
+            <div class="title">Категории</div>
+            <ul class="categories-list">
+            </ul>
+        </div>
+        <div class="products-holder">
+            <div class="product-holder-inner">
+                <div class="title">Продукты</div>
+                <ul class="products-list">
+                </ul>
+            </div>
+            <div class="product-placeholder">
+                <div class="title">Продукты</div>
+                <div class="product-placeholder-body">Пожалуйста, выберите категорию прежде чем смотреть список продуктов.</div>
+            </div>
+        </div>
+        <div class="product-details-holder">
+            <div class="title">Выбрано</div>
+            <div class="product-details">
+                <div class="product-price"></div>
+                <div class="product-description"></div>
+                <div class="product-buy-container">
+                    <button id="productBuyBtn">Купить..</button>
+                </div>
+                <div id="buy-form-container" style="display: none;">
+                    <span class="order-title">Оформить заказ</span>
+
+                    <form id="buy-form">
+                        <div class="form-row">
+                            <div class="form-row-inner">
+                                <span>Фамилия:</span>
+                                <input type="text" name="lastName" />
+                            </div>
+                            <div class="validation-error" for="lastName" style="display: none;"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-row-inner">
+                                <span>Имя:</span>
+                                <input type="text" name="firstName" />
+                            </div>
+                            <div class="validation-error" for="firstName" style="display: none;"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-row-inner">
+                                <span>Город:</span>
+                                <select name="city"></select>
+                            </div>
+                            <div class="validation-error" for="city" style="display: none;"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-row-inner">
+                                <span>Склад Новой почты:</span>
+                                <select name="warehouse"></select>
+                            </div>
+                            <div class="validation-error" for="warehouse" style="display: none;"></div>
+                        </div>
+                        <div class="form-row">
+                            <span>Оплата:</span>
+                            <div>
+                                <input type="radio" name="paymentType" id="cash" value="0" checked="checked" />
+                                <label for="cash">Наличные</label>
+                                <input type="radio" name="paymentType" id="card" value="1" />
+                                <label for="card">Картой</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-row-inner">
+                                <span>Количество:</span>
+                                <input name="amount" type="number" />
+                            </div>
+                            <div class="validation-error" for="amount" style="display: none;"></div>
+                        </div>
+                        <div class="form-row">
+                            <div>Комментарий к заказу:</div>
+                            <textarea name="comment"></textarea>
+                        </div>
+                        <div class="form-row confirm-submit-btn-container">
+                            <button id="confirm-submit-btn">Оформить заказ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="results-container" style="display: none">
+            <div class="title">Результаты</div>
+            <div id="product-submitted"></div>
+            <div>
+                <div>Информация об отправке:</div>
+                <table id="results-submitted-table">
+                    <tr>
+                        <td>Имя:</td>
+                        <td id="td_firstName"></td>
+                    </tr>
+                    <tr>
+                        <td>Фамилия:</td>
+                        <td id="td_lastName"></td>
+                    </tr>
+                    <tr>
+                        <td>Город:</td>
+                        <td id="td_city"></td>
+                    </tr>
+                    <tr>
+                        <td>Склад Новой почты:</td>
+                        <td id="td_warehouse"></td>
+                    </tr>
+                    <tr>
+                        <td>Оплата:</td>
+                        <td id="td_paymentType"></td>
+                    </tr>
+                    <tr>
+                        <td>Количество:</td>
+                        <td id="td_amount"></td>
+                    </tr>
+                    <tr>
+                        <td>Комментарий к заказу:</td>
+                        <td id="td_comment"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

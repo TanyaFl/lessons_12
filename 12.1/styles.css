@@ -1,0 +1,115 @@
+﻿body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+}
+
+a.selected {
+    color: red;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    gap: 5px;
+}
+.categories-holder {
+    background-color: azure;
+    width: 400px;
+}
+.title {
+    color: white;
+    padding: 5px;
+    line-height: 16px;
+    font-size: 16px;
+    background-color: navy;
+}
+.product-placeholder-body {
+    color: navy;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.products-holder {
+    background-color: azure;
+    flex-grow: 1;
+}
+
+.product-details-holder {
+    background-color: azure;
+    width: 400px;
+}
+
+.product-holder-inner,
+.product-details-holder {
+    display: none;
+}
+
+.product-details {
+    padding: 10px;
+    color: navy;
+}
+
+.product-buy-container {
+    margin-top: 5px;
+}
+
+#productBuyBtn {
+    background-color: navy;
+    color: white;
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+#buy-form-container {
+    margin-top: 15px;
+}
+
+.form-row {
+    margin-top: 5px;
+   
+}
+
+.form-row-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-title {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#results-container {
+    background-color: azure;
+    flex-grow: 1;
+    font-size: large;
+    color: navy;
+}
+
+#product-submitted {
+    margin-bottom: 10px;
+}
+
+.validation-error {
+    color: red;
+}
+
+.confirm-submit-btn-container {
+    text-align: center;
+    padding: 10px;
+}
